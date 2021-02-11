@@ -1,0 +1,19 @@
+<section class="w3l-grids-3 py-5">
+    <div class="container py-md-5">
+        <div class="row bottom-ab-grids align-items-center">
+            <div class="col-lg-6 bottom-ab-left pr-lg-5">
+                <h6 class="sub-title">${properties.subTitle}</h6>
+                <h3 class="hny-title">${properties.title}</h3>
+                <p class="my-3 pr-lg-4">
+                    <sly data-sly-resource="${'richtext' @ resourceType='monks/components/text'}"/>
+                </p>
+                <a href="${properties.link @extension='html'}" class="btn btn-style btn-secondary mt-4">${properties.btnTxt}</a>
+            </div>
+            <div class="col-lg-6 bottom-ab-right mt-lg-0 mt-5">
+                <img src="${properties.monksTeaserImage}" class="img-curve img-fluid" alt="" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<div data-sly-test="${wcmmode.edit}" class="cq-placeholder" data-emptytext="Monks Teaser"></div>

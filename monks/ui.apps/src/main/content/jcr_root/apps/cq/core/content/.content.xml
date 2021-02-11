@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:primaryType="sling:OrderedFolder">
+    <nav
+            jcr:primaryType="nt:unstructured">
+        <tools
+                jcr:primaryType="nt:unstructured">
+            <water-heights-configuration
+                    jcr:primaryType="nt:unstructured"
+                    id="water-heights-configuration"
+                    jcr:title="Water Heights Configuration"
+                    sling:orderBefore="operations">
+                <water-heights-container
+                    href="/monks/weather-config"
+                    jcr:primaryType="nt:unstructured"
+                    icon="form"
+                    jcr:description="Configure Water Heights"
+                    jcr:title="Water Heights Console"/>
+            </water-heights-configuration>
+        </tools>
+    </nav>
+</jcr:root>

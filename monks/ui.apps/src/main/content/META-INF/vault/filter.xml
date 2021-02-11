@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/monks/clientlibs"/>
+    <filter root="/apps/monks/components"/>
+    <filter root="/apps/monks/dashboard"/>
+    <filter root="/apps/cq"/>
+    <filter root="/apps/monks/i18n"/>
+    <filter root="/apps/msm/monks_blueprint" mode="merge"/>
+</workspaceFilter>

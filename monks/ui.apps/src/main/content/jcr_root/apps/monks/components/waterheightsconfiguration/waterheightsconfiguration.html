@@ -1,0 +1,47 @@
+<div class="contact-form py-5" id="monks-dashboard" data-path="${resource.path}">
+    <div class="container py-lg-5 py-md-4">
+        <h3 class="hny-title mb-lg-5 mb-4">Canal Water Level Configuration</h3>
+        <div class="contacts12-main mb-5">
+            <form action="javascript:void(0)" onsubmit="javascript:void(0)">
+                <div class="main-input">
+                    <div class="d-grid">
+                        <input type="date" name="date" class="contact-input" id="monks-dashboard-date" required/>
+                        <input type="number" name="waterHeight" placeholder="Water Height in cm"
+                               class="contact-input" id="monks-dashboard-waterHeight" required/>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <button class="btn btn-style btn-secondary btn-contact weather-dashboard-add">Add Entry</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="limiter">
+    <div class="wrap-table100">
+        <div class="table100 ver1 m-b-110">
+            <div class="table100-head">
+                <table>
+                    <thead>
+                    <tr class="row100 head">
+                        <th class="cell100 column1">Date</th>
+                        <th class="cell100 column2">Water Height (cm)</th>
+                        <th class="cell100 column3">Created Date</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+
+            <div class="table100-body js-pscroll">
+                <table>
+                    <tbody class="table-data">
+                        <tr class="row100 body"></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-sly-test="${wcmmode.edit}" class="cq-placeholder" data-emptytext="Water Heights Configuration"></div>

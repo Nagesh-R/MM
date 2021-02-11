@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            jcr:mixinTypes="[sling:VanityPath]"
+            consoleId="water-heights"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Water Heights"
+            sling:redirect="{Boolean}false"
+            sling:resourceType="granite/ui/components/shell/page"
+            sling:vanityOrder="{Long}301"
+            sling:vanityPath="/monks/weather-config">
+        <head
+                jcr:primaryType="nt:unstructured">
+            <viewport
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/admin/page/viewport"/>
+            <clientlibs
+                    jcr:primaryType="nt:unstructured"
+                    categories="[monks.base]"
+                    sling:resourceType="granite/ui/components/foundation/includeclientlibs"/>
+        </head>
+        <content
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items
+                    jcr:primaryType="nt:unstructured">
+                <dashboard
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="monks/components/waterheightsconfiguration"
+                        text="Welcome"/>
+            </items>
+        </content>
+    </jcr:content>
+</jcr:root>
